@@ -101,7 +101,7 @@ while not game_over:
     pygame.draw.line(screen, (205, 133, 63 ), (355, GAME_OVER_HEIGHT), (config.screen.width, GAME_OVER_HEIGHT), 2)
     
     for p in space.shapes:
-        if isinstance(p, Pazrticle):
+        if isinstance(p, Particle):
             p.draw(screen)
             if p.pos[1] < config.pad.killy and p.has_collided:
                 gameover(screen)
